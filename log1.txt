@@ -1,0 +1,352 @@
+nohup: ignoring input
+using torch 2.5.0.dev20240709
+dataset LOOPS_FULL
+model g2t
+lr 0.001
+lr_decay_steps [1, 3]
+wd 1e-05
+dropout 0.03
+filters [64, 64, 64]
+n_hidden 256
+epochs 50
+batch_size 32
+threads 2
+log_interval 1
+device cuda
+seed 2216
+shuffle_nodes False
+folds 5
+adj_sq True
+scale_identity False
+use_cont_node_attr True
+alpha 0.2
+multi_head 4
+Loading training_data...
+Class 0: 			1896 samples
+Class 1: 			1029 samples
+feature 1, count 20475/20475
+TRAIN: 2340/2925
+TEST: 585/2925
+FOLD 0, train 2340, test 585
+Initialize model...
+N trainable parameters: 608202
+/home/lijiaru/anaconda3/envs/pytorchgpu/lib/python3.10/site-packages/torch/optim/lr_scheduler.py:223: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn(
+Train Epoch: 1 [2340/2340 (100%)] Loss: 0.167647 (avg: 0.173119)  sec/iter: 0.7671
+Train Epoch: 2 [2340/2340 (100%)] Loss: 0.190637 (avg: 0.160961)  sec/iter: 0.7099
+Train Epoch: 3 [2340/2340 (100%)] Loss: 0.116786 (avg: 0.162810)  sec/iter: 0.8499
+Train Epoch: 4 [2340/2340 (100%)] Loss: 0.193740 (avg: 0.159371)  sec/iter: 0.9593
+Train Epoch: 5 [2340/2340 (100%)] Loss: 0.143527 (avg: 0.158850)  sec/iter: 1.0027
+Train Epoch: 6 [2340/2340 (100%)] Loss: 0.203821 (avg: 0.159161)  sec/iter: 0.9896
+Train Epoch: 7 [2340/2340 (100%)] Loss: 0.268929 (avg: 0.158789)  sec/iter: 0.9500
+Train Epoch: 8 [2340/2340 (100%)] Loss: 0.178116 (avg: 0.159022)  sec/iter: 0.9528
+Train Epoch: 9 [2340/2340 (100%)] Loss: 0.136319 (avg: 0.158337)  sec/iter: 1.0076
+Train Epoch: 10 [2340/2340 (100%)] Loss: 0.137646 (avg: 0.158290)  sec/iter: 1.0174
+Train Epoch: 11 [2340/2340 (100%)] Loss: 0.234620 (avg: 0.157230)  sec/iter: 0.9257
+Train Epoch: 12 [2340/2340 (100%)] Loss: 0.191036 (avg: 0.158307)  sec/iter: 0.9638
+Train Epoch: 13 [2340/2340 (100%)] Loss: 0.105525 (avg: 0.157213)  sec/iter: 0.9157
+Train Epoch: 14 [2340/2340 (100%)] Loss: 0.172710 (avg: 0.157706)  sec/iter: 0.9330
+Train Epoch: 15 [2340/2340 (100%)] Loss: 0.076815 (avg: 0.156419)  sec/iter: 0.9377
+Train Epoch: 16 [2340/2340 (100%)] Loss: 0.145433 (avg: 0.157996)  sec/iter: 0.8985
+Train Epoch: 17 [2340/2340 (100%)] Loss: 0.210186 (avg: 0.158630)  sec/iter: 0.9315
+Train Epoch: 18 [2340/2340 (100%)] Loss: 0.181150 (avg: 0.157091)  sec/iter: 0.9067
+Train Epoch: 19 [2340/2340 (100%)] Loss: 0.143515 (avg: 0.156916)  sec/iter: 0.9686
+Train Epoch: 20 [2340/2340 (100%)] Loss: 0.139303 (avg: 0.157203)  sec/iter: 0.9681
+Train Epoch: 21 [2340/2340 (100%)] Loss: 0.189528 (avg: 0.156212)  sec/iter: 0.9515
+Train Epoch: 22 [2340/2340 (100%)] Loss: 0.197481 (avg: 0.157368)  sec/iter: 0.9329
+Train Epoch: 23 [2340/2340 (100%)] Loss: 0.103811 (avg: 0.155974)  sec/iter: 0.8733
+Train Epoch: 24 [2340/2340 (100%)] Loss: 0.182672 (avg: 0.155761)  sec/iter: 0.9029
+Train Epoch: 25 [2340/2340 (100%)] Loss: 0.096503 (avg: 0.155952)  sec/iter: 0.8697
+Train Epoch: 26 [2340/2340 (100%)] Loss: 0.143880 (avg: 0.155246)  sec/iter: 0.9049
+Train Epoch: 27 [2340/2340 (100%)] Loss: 0.125443 (avg: 0.155186)  sec/iter: 0.9390
+Train Epoch: 28 [2340/2340 (100%)] Loss: 0.168879 (avg: 0.154729)  sec/iter: 0.9352
+Train Epoch: 29 [2340/2340 (100%)] Loss: 0.120110 (avg: 0.154957)  sec/iter: 0.9028
+Train Epoch: 30 [2340/2340 (100%)] Loss: 0.138249 (avg: 0.153894)  sec/iter: 0.8971
+Train Epoch: 31 [2340/2340 (100%)] Loss: 0.220320 (avg: 0.153856)  sec/iter: 0.8645
+Train Epoch: 32 [2340/2340 (100%)] Loss: 0.186122 (avg: 0.153717)  sec/iter: 0.9070
+Train Epoch: 33 [2340/2340 (100%)] Loss: 0.206261 (avg: 0.152506)  sec/iter: 0.9270
+Train Epoch: 34 [2340/2340 (100%)] Loss: 0.133714 (avg: 0.153085)  sec/iter: 0.9528
+Train Epoch: 35 [2340/2340 (100%)] Loss: 0.117325 (avg: 0.153750)  sec/iter: 0.8867
+Train Epoch: 36 [2340/2340 (100%)] Loss: 0.173192 (avg: 0.152831)  sec/iter: 0.9222
+Train Epoch: 37 [2340/2340 (100%)] Loss: 0.106096 (avg: 0.151442)  sec/iter: 0.9340
+Train Epoch: 38 [2340/2340 (100%)] Loss: 0.195638 (avg: 0.151383)  sec/iter: 0.9591
+Train Epoch: 39 [2340/2340 (100%)] Loss: 0.228205 (avg: 0.151239)  sec/iter: 0.9112
+Train Epoch: 40 [2340/2340 (100%)] Loss: 0.203582 (avg: 0.149837)  sec/iter: 1.0173
+Train Epoch: 41 [2340/2340 (100%)] Loss: 0.212316 (avg: 0.151133)  sec/iter: 1.0064
+Train Epoch: 42 [2340/2340 (100%)] Loss: 0.187417 (avg: 0.150398)  sec/iter: 0.9426
+Train Epoch: 43 [2340/2340 (100%)] Loss: 0.100929 (avg: 0.150597)  sec/iter: 0.8960
+Train Epoch: 44 [2340/2340 (100%)] Loss: 0.131071 (avg: 0.149793)  sec/iter: 0.9618
+Train Epoch: 45 [2340/2340 (100%)] Loss: 0.237275 (avg: 0.150475)  sec/iter: 1.0234
+Train Epoch: 46 [2340/2340 (100%)] Loss: 0.097910 (avg: 0.150191)  sec/iter: 1.0023
+Train Epoch: 47 [2340/2340 (100%)] Loss: 0.203120 (avg: 0.148927)  sec/iter: 0.9697
+Train Epoch: 48 [2340/2340 (100%)] Loss: 0.090264 (avg: 0.150136)  sec/iter: 0.9172
+Train Epoch: 49 [2340/2340 (100%)] Loss: 0.163477 (avg: 0.148636)  sec/iter: 0.9713
+Train Epoch: 50 [2340/2340 (100%)] Loss: 0.086101 (avg: 0.148519)  sec/iter: 1.0015
+/home/lijiaru/anaconda3/envs/pytorchgpu/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/lijiaru/anaconda3/envs/pytorchgpu/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/lijiaru/anaconda3/envs/pytorchgpu/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+50 7 380 148
+Test set (epoch 50): Average loss: 0.0044, Accuracy: (74.09%), Recall: (24.13%), Precision: (75.44%), F1-Score: (35.35%), FPR: (0.02%)  sec/iter: 1.1465
+
+fn_list(predict == 0 & label == 1): [1493, 1592, 2200, 1636, 2088, 1648, 1454, 1718, 1686, 1464, 1814, 2271, 1947, 1425, 2098, 2299, 1742, 1807, 1663, 2406, 2449, 1459, 1727, 1462, 1617, 1514, 1469, 1700, 1920, 1611, 2303, 1442, 2336, 1490, 2099, 1785, 2230, 1682, 2072, 1602, 2407, 1679, 1594, 2409, 1551, 2096, 2300, 1705, 1557, 1586, 1603, 2294, 2211, 1938, 1714, 1582, 2058, 1528, 1855, 1842, 2284, 1765, 1540, 1904, 1431, 1466, 1701, 1753, 2424, 2422, 2241, 1430, 1450, 2191, 2222, 2217, 1817, 1805, 1546, 2185, 1952, 1834, 1518, 1577, 1684, 1590, 2339, 1879, 1585, 1703, 2229, 1919, 1628, 1824, 1885, 1524, 2056, 1446, 1554, 1621, 1517, 1606, 2430, 1624, 2090, 1906, 2295, 1644, 1475, 1614, 2101, 1693, 2218, 1803, 1584, 1874, 2434, 2240, 1468, 2223, 1532, 1762, 1470, 2446, 1600, 1799, 2195, 1780, 1625, 1945, 1811, 1547, 1499, 1681, 1581, 2199, 2270, 1954, 1668, 2044, 1832, 1694, 2429, 1575, 1932, 2168, 1481, 1487]
+fp_list(predict == 1 & label == 0): [2705, 2694, 2680, 2706, 2687, 2712, 2691]
+
+TRAIN: 2340/2925
+TEST: 585/2925
+FOLD 1, train 2340, test 585
+Initialize model...
+N trainable parameters: 608202
+/home/lijiaru/anaconda3/envs/pytorchgpu/lib/python3.10/site-packages/torch/optim/lr_scheduler.py:223: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn(
+Train Epoch: 1 [2340/2340 (100%)] Loss: 0.182129 (avg: 0.172809)  sec/iter: 0.9459
+Train Epoch: 2 [2340/2340 (100%)] Loss: 0.158367 (avg: 0.163598)  sec/iter: 0.9280
+Train Epoch: 3 [2340/2340 (100%)] Loss: 0.151212 (avg: 0.160624)  sec/iter: 0.7593
+Train Epoch: 4 [2340/2340 (100%)] Loss: 0.202556 (avg: 0.159182)  sec/iter: 0.6673
+Train Epoch: 5 [2340/2340 (100%)] Loss: 0.175985 (avg: 0.159305)  sec/iter: 0.6652
+Train Epoch: 6 [2340/2340 (100%)] Loss: 0.205781 (avg: 0.158484)  sec/iter: 0.6984
+Train Epoch: 7 [2340/2340 (100%)] Loss: 0.128736 (avg: 0.158831)  sec/iter: 0.6469
+Train Epoch: 8 [2340/2340 (100%)] Loss: 0.164514 (avg: 0.158816)  sec/iter: 0.6870
+Train Epoch: 9 [2340/2340 (100%)] Loss: 0.267671 (avg: 0.157935)  sec/iter: 0.6741
+Train Epoch: 10 [2340/2340 (100%)] Loss: 0.218375 (avg: 0.157760)  sec/iter: 0.7769
+Train Epoch: 11 [2340/2340 (100%)] Loss: 0.118343 (avg: 0.157357)  sec/iter: 0.7304
+Train Epoch: 12 [2340/2340 (100%)] Loss: 0.252281 (avg: 0.157391)  sec/iter: 0.7622
+Train Epoch: 13 [2340/2340 (100%)] Loss: 0.073658 (avg: 0.155951)  sec/iter: 0.7126
+Train Epoch: 14 [2340/2340 (100%)] Loss: 0.152727 (avg: 0.156130)  sec/iter: 0.7295
+Train Epoch: 15 [2340/2340 (100%)] Loss: 0.126205 (avg: 0.156188)  sec/iter: 0.7749
+Train Epoch: 16 [2340/2340 (100%)] Loss: 0.154375 (avg: 0.155226)  sec/iter: 0.7681
+Train Epoch: 17 [2340/2340 (100%)] Loss: 0.138153 (avg: 0.156767)  sec/iter: 0.4939
+Train Epoch: 18 [2340/2340 (100%)] Loss: 0.159298 (avg: 0.154047)  sec/iter: 0.6974
+Train Epoch: 19 [2340/2340 (100%)] Loss: 0.109381 (avg: 0.153706)  sec/iter: 0.6604
+Train Epoch: 20 [2340/2340 (100%)] Loss: 0.137279 (avg: 0.154908)  sec/iter: 0.7561
+Train Epoch: 21 [2340/2340 (100%)] Loss: 0.160423 (avg: 0.153373)  sec/iter: 0.6454
+Train Epoch: 22 [2340/2340 (100%)] Loss: 0.137677 (avg: 0.153786)  sec/iter: 0.6573
+Train Epoch: 23 [2340/2340 (100%)] Loss: 0.105889 (avg: 0.153052)  sec/iter: 0.6934
+Train Epoch: 24 [2340/2340 (100%)] Loss: 0.145131 (avg: 0.151716)  sec/iter: 0.6996
+Train Epoch: 25 [2340/2340 (100%)] Loss: 0.248826 (avg: 0.154179)  sec/iter: 0.7113
+Train Epoch: 26 [2340/2340 (100%)] Loss: 0.177775 (avg: 0.152200)  sec/iter: 0.6914
+Train Epoch: 27 [2340/2340 (100%)] Loss: 0.126393 (avg: 0.152543)  sec/iter: 0.7049
+Train Epoch: 28 [2340/2340 (100%)] Loss: 0.114859 (avg: 0.152170)  sec/iter: 0.6463
+Train Epoch: 29 [2340/2340 (100%)] Loss: 0.153265 (avg: 0.150440)  sec/iter: 0.6906
+Train Epoch: 30 [2340/2340 (100%)] Loss: 0.109236 (avg: 0.150795)  sec/iter: 0.7092
+Train Epoch: 31 [2340/2340 (100%)] Loss: 0.184747 (avg: 0.149861)  sec/iter: 0.8061
+Train Epoch: 32 [2340/2340 (100%)] Loss: 0.184718 (avg: 0.150065)  sec/iter: 0.7985
+Train Epoch: 33 [2340/2340 (100%)] Loss: 0.119588 (avg: 0.150814)  sec/iter: 0.6885
+Train Epoch: 34 [2340/2340 (100%)] Loss: 0.136576 (avg: 0.149086)  sec/iter: 0.8311
+Train Epoch: 35 [2340/2340 (100%)] Loss: 0.109451 (avg: 0.149335)  sec/iter: 0.5908
+Train Epoch: 36 [2340/2340 (100%)] Loss: 0.133851 (avg: 0.147252)  sec/iter: 0.6841
+Train Epoch: 37 [2340/2340 (100%)] Loss: 0.136533 (avg: 0.149019)  sec/iter: 0.7115
+Train Epoch: 38 [2340/2340 (100%)] Loss: 0.116713 (avg: 0.149955)  sec/iter: 0.6599
+Train Epoch: 39 [2340/2340 (100%)] Loss: 0.132174 (avg: 0.147744)  sec/iter: 0.6773
+Train Epoch: 40 [2340/2340 (100%)] Loss: 0.136581 (avg: 0.147711)  sec/iter: 0.6497
+Train Epoch: 41 [2340/2340 (100%)] Loss: 0.122508 (avg: 0.147247)  sec/iter: 0.7109
+Train Epoch: 42 [2340/2340 (100%)] Loss: 0.068412 (avg: 0.147535)  sec/iter: 0.6894
+Train Epoch: 43 [2340/2340 (100%)] Loss: 0.131162 (avg: 0.147778)  sec/iter: 0.6317
+Train Epoch: 44 [2340/2340 (100%)] Loss: 0.108155 (avg: 0.145269)  sec/iter: 0.6623
+Train Epoch: 45 [2340/2340 (100%)] Loss: 0.109816 (avg: 0.145968)  sec/iter: 0.5456
+Train Epoch: 46 [2340/2340 (100%)] Loss: 0.110769 (avg: 0.146014)  sec/iter: 0.7155
+Train Epoch: 47 [2340/2340 (100%)] Loss: 0.080517 (avg: 0.146196)  sec/iter: 0.6192
+Train Epoch: 48 [2340/2340 (100%)] Loss: 0.148433 (avg: 0.145180)  sec/iter: 0.7569
+Train Epoch: 49 [2340/2340 (100%)] Loss: 0.191650 (avg: 0.144341)  sec/iter: 0.7121
+Train Epoch: 50 [2340/2340 (100%)] Loss: 0.176676 (avg: 0.144933)  sec/iter: 0.6072
+93 56 334 102
+Test set (epoch 50): Average loss: 0.0046, Accuracy: (73.59%), Recall: (48.44%), Precision: (62.13%), F1-Score: (52.76%), FPR: (0.14%)  sec/iter: 0.4883
+
+fn_list(predict == 0 & label == 1): [1704, 1697, 1820, 1754, 1899, 1816, 1726, 2281, 2435, 1896, 2451, 1777, 1828, 2272, 1876, 2046, 2285, 1918, 1804, 2425, 2279, 2280, 2404, 1784, 1761, 2308, 1766, 1886, 1933, 2232, 2237, 1881, 2226, 1822, 2045, 1838, 1948, 2035, 2320, 2213, 2094, 1931, 2212, 2242, 1716, 1944, 1837, 2188, 1856, 1815, 1687, 2445, 2437, 2448, 2420, 2038, 1930, 1889, 1823, 2286, 1959, 2444, 2100, 2183, 2315, 2095, 2441, 1941, 2243, 2323, 2182, 2413, 1955, 2304, 2043, 2202, 2084, 1934, 1768, 1912, 1672, 2190, 1715, 1819, 2049, 1792, 1720, 2421, 1756, 2238, 1928, 2081, 1710, 2189, 1783, 1916, 1915, 2079, 1717, 1951, 1702, 1781]
+fp_list(predict == 1 & label == 0): [131, 2699, 88, 2689, 2682, 33, 162, 198, 108, 114, 61, 9, 84, 191, 179, 130, 203, 123, 213, 151, 140, 118, 110, 163, 206, 2692, 184, 207, 165, 2698, 226, 158, 181, 27, 2697, 112, 82, 204, 30, 194, 225, 175, 199, 177, 124, 2709, 214, 143, 12, 2701, 182, 117, 159, 215, 2683, 26]
+
+TRAIN: 2340/2925
+TEST: 585/2925
+FOLD 2, train 2340, test 585
+Initialize model...
+N trainable parameters: 608202
+/home/lijiaru/anaconda3/envs/pytorchgpu/lib/python3.10/site-packages/torch/optim/lr_scheduler.py:223: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn(
+Train Epoch: 1 [2340/2340 (100%)] Loss: 0.161945 (avg: 0.174428)  sec/iter: 0.6371
+Train Epoch: 2 [2340/2340 (100%)] Loss: 0.153890 (avg: 0.164064)  sec/iter: 0.5754
+Train Epoch: 3 [2340/2340 (100%)] Loss: 0.140809 (avg: 0.156792)  sec/iter: 0.6965
+Train Epoch: 4 [2340/2340 (100%)] Loss: 0.129846 (avg: 0.157128)  sec/iter: 0.6303
+Train Epoch: 5 [2340/2340 (100%)] Loss: 0.141183 (avg: 0.156662)  sec/iter: 0.5940
+Train Epoch: 6 [2340/2340 (100%)] Loss: 0.147857 (avg: 0.156898)  sec/iter: 0.8514
+Train Epoch: 7 [2340/2340 (100%)] Loss: 0.172955 (avg: 0.156042)  sec/iter: 0.5950
+Train Epoch: 8 [2340/2340 (100%)] Loss: 0.122584 (avg: 0.155563)  sec/iter: 0.7537
+Train Epoch: 9 [2340/2340 (100%)] Loss: 0.195882 (avg: 0.155813)  sec/iter: 0.8272
+Train Epoch: 10 [2340/2340 (100%)] Loss: 0.144280 (avg: 0.155582)  sec/iter: 0.6578
+Train Epoch: 11 [2340/2340 (100%)] Loss: 0.186952 (avg: 0.155736)  sec/iter: 0.4900
+Train Epoch: 12 [2340/2340 (100%)] Loss: 0.186891 (avg: 0.154352)  sec/iter: 0.7540
+Train Epoch: 13 [2340/2340 (100%)] Loss: 0.133230 (avg: 0.155657)  sec/iter: 0.6998
+Train Epoch: 14 [2340/2340 (100%)] Loss: 0.200155 (avg: 0.155048)  sec/iter: 0.6796
+Train Epoch: 15 [2340/2340 (100%)] Loss: 0.156631 (avg: 0.153682)  sec/iter: 0.7777
+Train Epoch: 16 [2340/2340 (100%)] Loss: 0.130706 (avg: 0.153959)  sec/iter: 0.6628
+Train Epoch: 17 [2340/2340 (100%)] Loss: 0.195722 (avg: 0.153951)  sec/iter: 0.6739
+Train Epoch: 18 [2340/2340 (100%)] Loss: 0.147495 (avg: 0.154686)  sec/iter: 0.6561
+Train Epoch: 19 [2340/2340 (100%)] Loss: 0.144800 (avg: 0.153661)  sec/iter: 0.7740
+Train Epoch: 20 [2340/2340 (100%)] Loss: 0.160615 (avg: 0.154159)  sec/iter: 0.7940
+Train Epoch: 21 [2340/2340 (100%)] Loss: 0.134805 (avg: 0.153948)  sec/iter: 0.8439
+Train Epoch: 22 [2340/2340 (100%)] Loss: 0.122351 (avg: 0.152816)  sec/iter: 0.5875
+Train Epoch: 23 [2340/2340 (100%)] Loss: 0.176806 (avg: 0.153446)  sec/iter: 0.6140
+Train Epoch: 24 [2340/2340 (100%)] Loss: 0.197586 (avg: 0.152845)  sec/iter: 0.8680
+Train Epoch: 25 [2340/2340 (100%)] Loss: 0.230821 (avg: 0.151603)  sec/iter: 0.7047
+Train Epoch: 26 [2340/2340 (100%)] Loss: 0.117764 (avg: 0.152978)  sec/iter: 0.7590
+Train Epoch: 27 [2340/2340 (100%)] Loss: 0.212190 (avg: 0.152651)  sec/iter: 0.8073
+Train Epoch: 28 [2340/2340 (100%)] Loss: 0.195916 (avg: 0.153604)  sec/iter: 0.8813
+Train Epoch: 29 [2340/2340 (100%)] Loss: 0.153631 (avg: 0.152290)  sec/iter: 0.8871
+Train Epoch: 30 [2340/2340 (100%)] Loss: 0.160818 (avg: 0.151196)  sec/iter: 0.9514
+Train Epoch: 31 [2340/2340 (100%)] Loss: 0.190927 (avg: 0.150941)  sec/iter: 0.9723
+Train Epoch: 32 [2340/2340 (100%)] Loss: 0.189737 (avg: 0.150901)  sec/iter: 1.0054
+Train Epoch: 33 [2340/2340 (100%)] Loss: 0.195435 (avg: 0.151309)  sec/iter: 0.9190
+Train Epoch: 34 [2340/2340 (100%)] Loss: 0.169075 (avg: 0.151770)  sec/iter: 0.9164
+Train Epoch: 35 [2340/2340 (100%)] Loss: 0.122134 (avg: 0.151221)  sec/iter: 1.0099
+Train Epoch: 36 [2340/2340 (100%)] Loss: 0.071456 (avg: 0.150126)  sec/iter: 0.9146
+Train Epoch: 37 [2340/2340 (100%)] Loss: 0.114703 (avg: 0.149771)  sec/iter: 0.9635
+Train Epoch: 38 [2340/2340 (100%)] Loss: 0.113507 (avg: 0.149615)  sec/iter: 0.9311
+Train Epoch: 39 [2340/2340 (100%)] Loss: 0.132513 (avg: 0.149071)  sec/iter: 0.9362
+Train Epoch: 40 [2340/2340 (100%)] Loss: 0.152213 (avg: 0.148592)  sec/iter: 0.9629
+Train Epoch: 41 [2340/2340 (100%)] Loss: 0.130403 (avg: 0.147828)  sec/iter: 0.9238
+Train Epoch: 42 [2340/2340 (100%)] Loss: 0.077279 (avg: 0.148241)  sec/iter: 0.9898
+Train Epoch: 43 [2340/2340 (100%)] Loss: 0.076164 (avg: 0.148975)  sec/iter: 0.9852
+Train Epoch: 44 [2340/2340 (100%)] Loss: 0.171109 (avg: 0.148215)  sec/iter: 0.7768
+Train Epoch: 45 [2340/2340 (100%)] Loss: 0.194970 (avg: 0.147120)  sec/iter: 0.8762
+Train Epoch: 46 [2340/2340 (100%)] Loss: 0.124254 (avg: 0.147631)  sec/iter: 0.7324
+Train Epoch: 47 [2340/2340 (100%)] Loss: 0.110925 (avg: 0.146919)  sec/iter: 0.7563
+Train Epoch: 48 [2340/2340 (100%)] Loss: 0.101549 (avg: 0.147060)  sec/iter: 0.7607
+Train Epoch: 49 [2340/2340 (100%)] Loss: 0.224065 (avg: 0.147277)  sec/iter: 0.6978
+Train Epoch: 50 [2340/2340 (100%)] Loss: 0.141379 (avg: 0.147107)  sec/iter: 0.6511
+78 46 329 132
+Test set (epoch 50): Average loss: 0.0049, Accuracy: (70.30%), Recall: (37.82%), Precision: (62.73%), F1-Score: (46.32%), FPR: (0.12%)  sec/iter: 0.4903
+
+fn_list(predict == 0 & label == 1): [1779, 2402, 1685, 2268, 2258, 2297, 1958, 1924, 2432, 1798, 2417, 2433, 2276, 2442, 2204, 1911, 2287, 2408, 1857, 1755, 1741, 1883, 2282, 1825, 2216, 1793, 1873, 2275, 2231, 1926, 1864, 2209, 1764, 1854, 2036, 2329, 1903, 2194, 2410, 2298, 1692, 2311, 2089, 2051, 2431, 2052, 1884, 1794, 2080, 1724, 2063, 1908, 2104, 2262, 1844, 2206, 1637, 2057, 1790, 2177, 1890, 2164, 2179, 2068, 1748, 1782, 1841, 2259, 1949, 2252, 1917, 1745, 2203, 2438, 1875, 1675, 1900, 2074, 1728, 2250, 2288, 1773, 2415, 2198, 2053, 1736, 2344, 1776, 2085, 1843, 2316, 1957, 1818, 2066, 2342, 1830, 2219, 2082, 2167, 1767, 1872, 1730, 2328, 2170, 1921, 1723, 1655, 2325, 1734, 1871, 1732, 1809, 2334, 1902, 2076, 2411, 2305, 1923, 2054, 1867, 2332, 2317, 1927, 1772, 1907, 1877, 2426, 2205, 1749, 1940, 2039, 1839]
+fp_list(predict == 1 & label == 0): [115, 149, 2685, 183, 219, 233, 2700, 29, 5, 97, 101, 63, 232, 10, 144, 195, 77, 228, 153, 164, 2686, 86, 155, 2, 197, 221, 2707, 7, 73, 134, 2711, 229, 25, 91, 174, 146, 180, 133, 102, 192, 220, 113, 65, 128, 147, 208]
+
+TRAIN: 2340/2925
+TEST: 585/2925
+FOLD 3, train 2340, test 585
+Initialize model...
+N trainable parameters: 608202
+/home/lijiaru/anaconda3/envs/pytorchgpu/lib/python3.10/site-packages/torch/optim/lr_scheduler.py:223: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn(
+Train Epoch: 1 [2340/2340 (100%)] Loss: 0.212798 (avg: 0.166279)  sec/iter: 0.6624
+Train Epoch: 2 [2340/2340 (100%)] Loss: 0.224743 (avg: 0.161156)  sec/iter: 0.6986
+Train Epoch: 3 [2340/2340 (100%)] Loss: 0.108351 (avg: 0.156962)  sec/iter: 0.8165
+Train Epoch: 4 [2340/2340 (100%)] Loss: 0.139932 (avg: 0.156789)  sec/iter: 0.5756
+Train Epoch: 5 [2340/2340 (100%)] Loss: 0.224051 (avg: 0.156450)  sec/iter: 0.6702
+Train Epoch: 6 [2340/2340 (100%)] Loss: 0.177771 (avg: 0.156648)  sec/iter: 0.6500
+Train Epoch: 7 [2340/2340 (100%)] Loss: 0.191033 (avg: 0.156449)  sec/iter: 0.7842
+Train Epoch: 8 [2340/2340 (100%)] Loss: 0.138368 (avg: 0.156095)  sec/iter: 0.8405
+Train Epoch: 9 [2340/2340 (100%)] Loss: 0.140521 (avg: 0.156666)  sec/iter: 0.8462
+Train Epoch: 10 [2340/2340 (100%)] Loss: 0.128145 (avg: 0.156260)  sec/iter: 0.6497
+Train Epoch: 11 [2340/2340 (100%)] Loss: 0.141319 (avg: 0.154580)  sec/iter: 0.6778
+Train Epoch: 12 [2340/2340 (100%)] Loss: 0.176492 (avg: 0.155731)  sec/iter: 0.7829
+Train Epoch: 13 [2340/2340 (100%)] Loss: 0.085045 (avg: 0.154931)  sec/iter: 0.8007
+Train Epoch: 14 [2340/2340 (100%)] Loss: 0.150966 (avg: 0.155820)  sec/iter: 0.7577
+Train Epoch: 15 [2340/2340 (100%)] Loss: 0.138376 (avg: 0.155062)  sec/iter: 0.6964
+Train Epoch: 16 [2340/2340 (100%)] Loss: 0.181972 (avg: 0.155123)  sec/iter: 0.7820
+Train Epoch: 17 [2340/2340 (100%)] Loss: 0.092177 (avg: 0.153916)  sec/iter: 0.7976
+Train Epoch: 18 [2340/2340 (100%)] Loss: 0.198965 (avg: 0.154279)  sec/iter: 0.7812
+Train Epoch: 19 [2340/2340 (100%)] Loss: 0.132528 (avg: 0.153919)  sec/iter: 0.7304
+Train Epoch: 20 [2340/2340 (100%)] Loss: 0.125366 (avg: 0.154479)  sec/iter: 0.6531
+Train Epoch: 21 [2340/2340 (100%)] Loss: 0.109799 (avg: 0.154379)  sec/iter: 0.7246
+Train Epoch: 22 [2340/2340 (100%)] Loss: 0.161637 (avg: 0.152958)  sec/iter: 0.8057
+Train Epoch: 23 [2340/2340 (100%)] Loss: 0.132425 (avg: 0.153313)  sec/iter: 0.6998
+Train Epoch: 24 [2340/2340 (100%)] Loss: 0.110606 (avg: 0.152615)  sec/iter: 0.6682
+Train Epoch: 25 [2340/2340 (100%)] Loss: 0.154629 (avg: 0.151670)  sec/iter: 0.7385
+Train Epoch: 26 [2340/2340 (100%)] Loss: 0.154605 (avg: 0.153126)  sec/iter: 0.8896
+Train Epoch: 27 [2340/2340 (100%)] Loss: 0.101623 (avg: 0.151501)  sec/iter: 0.8392
+Train Epoch: 28 [2340/2340 (100%)] Loss: 0.098369 (avg: 0.151127)  sec/iter: 0.8469
+Train Epoch: 29 [2340/2340 (100%)] Loss: 0.161360 (avg: 0.150161)  sec/iter: 0.8442
+Train Epoch: 30 [2340/2340 (100%)] Loss: 0.163012 (avg: 0.150266)  sec/iter: 0.8523
+Train Epoch: 31 [2340/2340 (100%)] Loss: 0.126362 (avg: 0.150145)  sec/iter: 0.8225
+Train Epoch: 32 [2340/2340 (100%)] Loss: 0.173236 (avg: 0.149265)  sec/iter: 0.8847
+Train Epoch: 33 [2340/2340 (100%)] Loss: 0.247820 (avg: 0.149401)  sec/iter: 0.8817
+Train Epoch: 34 [2340/2340 (100%)] Loss: 0.164206 (avg: 0.147656)  sec/iter: 0.8830
+Train Epoch: 35 [2340/2340 (100%)] Loss: 0.164423 (avg: 0.148545)  sec/iter: 0.9261
+Train Epoch: 36 [2340/2340 (100%)] Loss: 0.185862 (avg: 0.148209)  sec/iter: 0.8841
+Train Epoch: 37 [2340/2340 (100%)] Loss: 0.197980 (avg: 0.148402)  sec/iter: 0.9702
+Train Epoch: 38 [2340/2340 (100%)] Loss: 0.080361 (avg: 0.147205)  sec/iter: 0.9554
+Train Epoch: 39 [2340/2340 (100%)] Loss: 0.092417 (avg: 0.146782)  sec/iter: 1.0211
+Train Epoch: 40 [2340/2340 (100%)] Loss: 0.108936 (avg: 0.146401)  sec/iter: 0.9898
+Train Epoch: 41 [2340/2340 (100%)] Loss: 0.181209 (avg: 0.146888)  sec/iter: 0.9815
+Train Epoch: 42 [2340/2340 (100%)] Loss: 0.166790 (avg: 0.144717)  sec/iter: 1.0549
+Train Epoch: 43 [2340/2340 (100%)] Loss: 0.163005 (avg: 0.145169)  sec/iter: 0.9459
+Train Epoch: 44 [2340/2340 (100%)] Loss: 0.131484 (avg: 0.144454)  sec/iter: 1.0221
+Train Epoch: 45 [2340/2340 (100%)] Loss: 0.122742 (avg: 0.144205)  sec/iter: 0.8988
+Train Epoch: 46 [2340/2340 (100%)] Loss: 0.140395 (avg: 0.145078)  sec/iter: 0.9253
+Train Epoch: 47 [2340/2340 (100%)] Loss: 0.097128 (avg: 0.144597)  sec/iter: 0.8959
+Train Epoch: 48 [2340/2340 (100%)] Loss: 0.133228 (avg: 0.144106)  sec/iter: 0.9360
+Train Epoch: 49 [2340/2340 (100%)] Loss: 0.080742 (avg: 0.144229)  sec/iter: 0.8888
+Train Epoch: 50 [2340/2340 (100%)] Loss: 0.216881 (avg: 0.144154)  sec/iter: 0.9141
+79 24 341 141
+Test set (epoch 50): Average loss: 0.0048, Accuracy: (72.02%), Recall: (36.26%), Precision: (80.09%), F1-Score: (47.88%), FPR: (0.07%)  sec/iter: 1.0361
+
+fn_list(predict == 0 & label == 1): [2307, 2439, 2412, 1473, 2105, 2041, 1878, 2040, 1471, 1826, 2414, 2102, 2047, 2293, 2251, 1895, 1769, 1739, 2326, 2335, 2296, 2071, 2450, 2327, 1910, 2103, 2401, 1880, 2042, 1733, 1848, 1689, 1677, 2086, 2423, 2037, 1696, 2321, 2331, 1942, 1812, 1485, 1484, 2306, 2061, 1743, 2181, 1956, 1810, 2289, 1806, 1680, 1444, 1953, 1729, 2186, 1925, 1494, 1460, 2428, 1898, 1801, 1840, 1443, 1452, 2225, 2059, 1905, 2077, 1791, 1474, 1731, 2418, 2235, 2301, 2073, 1771, 1721, 1808, 2333, 1678, 1946, 1897, 1950, 1892, 1795, 2067, 2302, 2087, 1845, 1797, 2228, 1750, 1893, 1882, 2197, 1914, 1770, 2065, 2201, 1465, 2314, 2338, 1763, 2184, 1639, 2075, 1936, 2214, 1712, 1813, 1674, 1850, 2210, 2244, 2093, 1725, 1852, 1711, 1827, 2220, 1835, 2234, 1707, 1888, 1759, 2443, 1719, 1683, 1831, 2055, 2078, 2266, 2283, 2343, 2187, 1424, 2227, 1913, 1909, 1929]
+fp_list(predict == 1 & label == 0): [95, 104, 2703, 138, 129, 121, 107, 157, 170, 137, 176, 106, 2690, 2702, 2704, 2688, 2708, 122, 171, 119, 169, 2684, 132, 109]
+
+TRAIN: 2340/2925
+TEST: 585/2925
+FOLD 4, train 2340, test 585
+Initialize model...
+N trainable parameters: 608202
+/home/lijiaru/anaconda3/envs/pytorchgpu/lib/python3.10/site-packages/torch/optim/lr_scheduler.py:223: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn(
+Train Epoch: 1 [2340/2340 (100%)] Loss: 0.180073 (avg: 0.165084)  sec/iter: 0.9650
+Train Epoch: 2 [2340/2340 (100%)] Loss: 0.224006 (avg: 0.162276)  sec/iter: 0.9135
+Train Epoch: 3 [2340/2340 (100%)] Loss: 0.196752 (avg: 0.157427)  sec/iter: 0.9010
+Train Epoch: 4 [2340/2340 (100%)] Loss: 0.153237 (avg: 0.155432)  sec/iter: 0.9411
+Train Epoch: 5 [2340/2340 (100%)] Loss: 0.148210 (avg: 0.155939)  sec/iter: 0.9161
+Train Epoch: 6 [2340/2340 (100%)] Loss: 0.083777 (avg: 0.154921)  sec/iter: 0.9130
+Train Epoch: 7 [2340/2340 (100%)] Loss: 0.196849 (avg: 0.154824)  sec/iter: 0.9299
+Train Epoch: 8 [2340/2340 (100%)] Loss: 0.133037 (avg: 0.152857)  sec/iter: 0.9041
+Train Epoch: 9 [2340/2340 (100%)] Loss: 0.087246 (avg: 0.154930)  sec/iter: 0.9027
+Train Epoch: 10 [2340/2340 (100%)] Loss: 0.163525 (avg: 0.153768)  sec/iter: 0.9340
+Train Epoch: 11 [2340/2340 (100%)] Loss: 0.105513 (avg: 0.153440)  sec/iter: 0.9897
+Train Epoch: 12 [2340/2340 (100%)] Loss: 0.153235 (avg: 0.153683)  sec/iter: 0.9745
+Train Epoch: 13 [2340/2340 (100%)] Loss: 0.111074 (avg: 0.153733)  sec/iter: 0.9109
+Train Epoch: 14 [2340/2340 (100%)] Loss: 0.133565 (avg: 0.152684)  sec/iter: 0.8664
+Train Epoch: 15 [2340/2340 (100%)] Loss: 0.135430 (avg: 0.151601)  sec/iter: 0.8950
+Train Epoch: 16 [2340/2340 (100%)] Loss: 0.160199 (avg: 0.151732)  sec/iter: 0.9518
+Train Epoch: 17 [2340/2340 (100%)] Loss: 0.179212 (avg: 0.152294)  sec/iter: 0.8994
+Train Epoch: 18 [2340/2340 (100%)] Loss: 0.164213 (avg: 0.151949)  sec/iter: 0.8105
+Train Epoch: 19 [2340/2340 (100%)] Loss: 0.146238 (avg: 0.151453)  sec/iter: 0.8868
+Train Epoch: 20 [2340/2340 (100%)] Loss: 0.136458 (avg: 0.149988)  sec/iter: 0.8900
+Train Epoch: 21 [2340/2340 (100%)] Loss: 0.187465 (avg: 0.150254)  sec/iter: 0.8436
+Train Epoch: 22 [2340/2340 (100%)] Loss: 0.116337 (avg: 0.149819)  sec/iter: 0.8005
+Train Epoch: 23 [2340/2340 (100%)] Loss: 0.096130 (avg: 0.148747)  sec/iter: 0.8199
+Train Epoch: 24 [2340/2340 (100%)] Loss: 0.197781 (avg: 0.148512)  sec/iter: 0.8403
+Train Epoch: 25 [2340/2340 (100%)] Loss: 0.148501 (avg: 0.148923)  sec/iter: 0.8515
+Train Epoch: 26 [2340/2340 (100%)] Loss: 0.077765 (avg: 0.148434)  sec/iter: 0.8405
+Train Epoch: 27 [2340/2340 (100%)] Loss: 0.292412 (avg: 0.148244)  sec/iter: 0.9570
+Train Epoch: 28 [2340/2340 (100%)] Loss: 0.123317 (avg: 0.147092)  sec/iter: 0.8757
+Train Epoch: 29 [2340/2340 (100%)] Loss: 0.216888 (avg: 0.148512)  sec/iter: 0.7791
+Train Epoch: 30 [2340/2340 (100%)] Loss: 0.129650 (avg: 0.146314)  sec/iter: 0.8206
+Train Epoch: 31 [2340/2340 (100%)] Loss: 0.182253 (avg: 0.146281)  sec/iter: 0.7209
+Train Epoch: 32 [2340/2340 (100%)] Loss: 0.149766 (avg: 0.146325)  sec/iter: 0.6896
+Train Epoch: 33 [2340/2340 (100%)] Loss: 0.149904 (avg: 0.146022)  sec/iter: 0.7486
+Train Epoch: 34 [2340/2340 (100%)] Loss: 0.102626 (avg: 0.146405)  sec/iter: 0.7013
+Train Epoch: 35 [2340/2340 (100%)] Loss: 0.136791 (avg: 0.146947)  sec/iter: 0.7288
+Train Epoch: 36 [2340/2340 (100%)] Loss: 0.095702 (avg: 0.145561)  sec/iter: 0.7941
+Train Epoch: 37 [2340/2340 (100%)] Loss: 0.296112 (avg: 0.144841)  sec/iter: 0.7625
+Train Epoch: 38 [2340/2340 (100%)] Loss: 0.195076 (avg: 0.146645)  sec/iter: 0.7632
+Train Epoch: 39 [2340/2340 (100%)] Loss: 0.140900 (avg: 0.144827)  sec/iter: 0.7572
+Train Epoch: 40 [2340/2340 (100%)] Loss: 0.172283 (avg: 0.144857)  sec/iter: 0.8054
+Train Epoch: 41 [2340/2340 (100%)] Loss: 0.079093 (avg: 0.144763)  sec/iter: 0.7483
+Train Epoch: 42 [2340/2340 (100%)] Loss: 0.116040 (avg: 0.144315)  sec/iter: 0.6382
+Train Epoch: 43 [2340/2340 (100%)] Loss: 0.184053 (avg: 0.144891)  sec/iter: 0.6823
+Train Epoch: 44 [2340/2340 (100%)] Loss: 0.151669 (avg: 0.144966)  sec/iter: 0.6644
+Train Epoch: 45 [2340/2340 (100%)] Loss: 0.165646 (avg: 0.144514)  sec/iter: 0.7250
+Train Epoch: 46 [2340/2340 (100%)] Loss: 0.168967 (avg: 0.144537)  sec/iter: 0.7146
+Train Epoch: 47 [2340/2340 (100%)] Loss: 0.076877 (avg: 0.143472)  sec/iter: 0.6100
+Train Epoch: 48 [2340/2340 (100%)] Loss: 0.146448 (avg: 0.143270)  sec/iter: 0.7151
+Train Epoch: 49 [2340/2340 (100%)] Loss: 0.201289 (avg: 0.144269)  sec/iter: 0.7031
+Train Epoch: 50 [2340/2340 (100%)] Loss: 0.105292 (avg: 0.144494)  sec/iter: 0.6351
+/home/lijiaru/anaconda3/envs/pytorchgpu/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+80 21 358 126
+Test set (epoch 50): Average loss: 0.0045, Accuracy: (74.98%), Recall: (37.84%), Precision: (76.52%), F1-Score: (48.67%), FPR: (0.06%)  sec/iter: 0.8293
+
+fn_list(predict == 0 & label == 1): [1752, 2097, 2193, 2313, 2427, 2178, 2207, 1943, 2436, 2416, 1939, 2165, 1688, 2405, 1706, 2319, 1441, 1751, 1426, 2277, 2324, 2309, 1758, 2106, 1735, 2064, 2265, 2246, 2253, 2330, 2267, 2248, 1737, 1800, 1901, 1641, 2050, 1760, 1744, 1673, 1836, 2245, 1691, 1690, 1787, 2083, 2048, 1891, 1887, 2340, 2166, 1894, 1746, 1708, 1740, 2180, 2322, 1833, 2236, 1709, 1455, 1445, 2403, 2264, 1937, 1849, 2263, 2447, 2192, 2341, 2419, 2318, 1935, 1738, 2278, 1698, 1788, 1786, 2221, 1699, 2169, 2249, 2269, 2196, 2060, 2239, 1757, 2337, 1821, 1922, 1847, 1853, 2274, 1713, 1802, 1638, 1491, 2247, 1695, 1846, 1796, 2224, 2215, 2062, 1453, 1747, 1447, 1851, 2176, 2092, 2440, 1829, 1789, 1775, 2208, 2273, 2310, 2233, 2091, 2312, 1480, 1778, 1722, 1676, 1461, 1774]
+fp_list(predict == 1 & label == 0): [172, 98, 2710, 93, 2693, 100, 2695, 156, 111, 161, 166, 99, 2681, 2696, 126, 136, 689, 688, 116, 135, 125]
+
+[[74.08625730994152, 24.131278078646503, 75.43859649122807, 35.34737423241579, 0.01808785529715762], [73.59283625730994, 48.43886376781113, 62.13402094981041, 52.75556285396102, 0.14358974358974358], [70.30336257309942, 37.8239304555094, 62.73391812865498, 46.31586251265529, 0.12266666666666666], [72.02119883040936, 36.26036841329329, 80.08771929824563, 47.87864606440457, 0.06575342465753424], [74.98172514619883, 37.83894468104994, 76.51837928153718, 48.668582879109195, 0.055408970976253295]]
+5-fold cross validation avg acc (+- std): 72.99707602339183% (1.65460005560355%), recall (+- std): 36.89867707926205% (7.724377269058834%), precision (+- std): 71.38252682989526% (7.469167970996207%), F1-Score (+- std): 46.193205708509176% (5.825458569656003%), FPR (+- fpr): 0.08110133223747108% (0.04582320929378105%)
